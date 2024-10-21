@@ -1,42 +1,69 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #22343d;
+  background: #fff;
+}
+.display-7 {
+  font-size: 18px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.display-8 {
+  font-size: 34px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.mb-6 {
+  margin-bottom: 95px;
+}
+
+.mb-7 {
+  margin-bottom: 114px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.pl-6 {
+  padding-left: 0;
+}
+
+.width {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .width {
+    width: auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1199px) {
+  .pl-6 {
+    padding-left: 108px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.my-6 {
+  margin-top: 64px;
+  margin-bottom: 71px;
 }
 
-.card {
-  padding: 2em;
+.fs-20 {
+  font-size: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.px-6 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.text-gray {
+  color: #737373;
+}
+
+.text-dark-gray {
+  color: #252b42;
 }
