@@ -5,6 +5,13 @@
   color: #22343d;
   background: #fff;
 }
+
+.nav-link.active {
+  color: blue;
+  font-weight: 500;
+  border-bottom: 1px solid #13653f;
+}
+
 .display-7 {
   font-size: 18px;
 }

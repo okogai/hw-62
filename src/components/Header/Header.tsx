@@ -1,23 +1,48 @@
-import logo from '../../assets/logo.svg';
+import logo from "../../assets/logo.svg";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
+    <div className="mb-6">
       <nav className="navbar navbar-expand-md bg-body-tertiary pt-3 pb-3">
         <div className="container-xxl">
-          <a className="navbar-brand" href="#">
-            <img src={logo} alt="Product"/>
+          <a className="navbar-brand" href={"/aboutUs"}>
+            <img src={logo} alt="Product" />
           </a>
-          <div className="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
+          <div
+            className="collapse navbar-collapse justify-content-end me-3"
+            id="navbarNav"
+          >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link me-4" aria-current="page" href="#">About us</a>
+                <NavLink
+                  to={"/aboutUs"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  About Us
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link me-4" href="#">Our strategies</a>
+                <NavLink
+                  to={"/ourStrategies"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Our Strategies
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link me-4" href="#">Reviews</a>
+                <NavLink
+                  to={"/reviews"}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Reviews
+                </NavLink>
               </li>
             </ul>
           </div>
